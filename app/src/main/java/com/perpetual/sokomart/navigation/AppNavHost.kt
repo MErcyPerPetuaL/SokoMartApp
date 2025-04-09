@@ -26,6 +26,22 @@ fun AppNavHost(
         composable(ROUT_ABOUT) {
             AboutScreen(navController)
         }
+        composable(ROUT_MORE) {
+            AboutScreen(navController)
+        }
+        composable(ROUT_INTENT) {
+            AboutScreen(navController)
+        }
+        composable(ROUT_START) {
+            AboutScreen(navController)
+        }
+        composable(ROUT_ITEM) {
+            AboutScreen(navController)
+        }
+
+        composable(ROUT_DASHBOARD) {
+            AboutScreen(navController)
+        }
 
     }
 }

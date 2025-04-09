@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material.icons.filled.Search
@@ -76,6 +77,9 @@ fun ItemScreen(navController: NavController) {
 
                 IconButton(onClick = {}) {
                     Icon(imageVector = Icons.Default.Notifications, contentDescription = "")
+                }
+                IconButton(onClick = {}) {
+                    Icon(imageVector = Icons.Default.ArrowForward, contentDescription = "")
                 }
             },
 
@@ -147,14 +151,33 @@ fun ItemScreen(navController: NavController) {
 
 
                 Row {
-                    Icon(imageVector = Icons.Default.Star, contentDescription = "")
-                    Icon(imageVector = Icons.Default.Star, contentDescription = "")
-                    Icon(imageVector = Icons.Default.Star, contentDescription = "")
-                    Icon(imageVector = Icons.Default.Star, contentDescription = "")
-                    Icon(imageVector = Icons.Default.Star, contentDescription = "")
-                    Icon(imageVector = Icons.Default.Star, contentDescription = "")
-                    Icon(imageVector = Icons.Default.Star, contentDescription = "")
+                    Icon(
+                        imageVector = Icons.Default.Star,
+                        contentDescription = "",
+                        tint = Color(0xFFFFD700) // Gold/Yellow
+                    )
+                    Icon(
+                        imageVector = Icons.Default.Star,
+                        contentDescription = "",
+                        tint = Color(0xFFFFD700)
+                    )
+                    Icon(
+                        imageVector = Icons.Default.Star,
+                        contentDescription = "",
+                        tint = Color(0xFFFFD700)
+                    )
+                    Icon(
+                        imageVector = Icons.Default.Star,
+                        contentDescription = "",
+                        tint = Color(0xFFFFD700)
+                    )
+                    Icon(
+                        imageVector = Icons.Default.Star,
+                        contentDescription = "",
+                        tint = Color(0xFFFFD700)
+                    )
                 }
+
 
 
 
@@ -205,13 +228,35 @@ fun ItemScreen(navController: NavController) {
                 )
 
 
+
                 Row {
-                    Icon(imageVector = Icons.Default.Star, contentDescription = "")
-                    Icon(imageVector = Icons.Default.Star, contentDescription = "")
-                    Icon(imageVector = Icons.Default.Star, contentDescription = "")
-                    Icon(imageVector = Icons.Default.Star, contentDescription = "")
-                    Icon(imageVector = Icons.Default.Star, contentDescription = "")
+                    Icon(
+                        imageVector = Icons.Default.Star,
+                        contentDescription = "",
+                        tint = Color(0xFFFFD700) // Gold/Yellow
+                    )
+                    Icon(
+                        imageVector = Icons.Default.Star,
+                        contentDescription = "",
+                        tint = Color(0xFFFFD700)
+                    )
+                    Icon(
+                        imageVector = Icons.Default.Star,
+                        contentDescription = "",
+                        tint = Color(0xFFFFD700)
+                    )
+                    Icon(
+                        imageVector = Icons.Default.Star,
+                        contentDescription = "",
+                        tint = Color(0xFFFFD700)
+                    )
+                    Icon(
+                        imageVector = Icons.Default.Star,
+                        contentDescription = "",
+                        tint = Color.LightGray
+                    )
                 }
+
 
 
 
@@ -263,13 +308,36 @@ fun ItemScreen(navController: NavController) {
 
 
                 Row {
-                    Icon(imageVector = Icons.Default.Star, contentDescription = "")
-                    Icon(imageVector = Icons.Default.Star, contentDescription = "")
-                    Icon(imageVector = Icons.Default.Star, contentDescription = "")
-                    Icon(imageVector = Icons.Default.Star, contentDescription = "")
-                    Icon(imageVector = Icons.Default.Star, contentDescription = "")
-                    Icon(imageVector = Icons.Default.Star, contentDescription = "")
+                    Icon(
+                        imageVector = Icons.Default.Star,
+                        contentDescription = "",
+                        tint = Color(0xFFFFD700) // Gold/Yellow
+                    )
+                    Icon(
+                        imageVector = Icons.Default.Star,
+                        contentDescription = "",
+                        tint = Color(0xFFFFD700)
+                    )
+                    Icon(
+                        imageVector = Icons.Default.Star,
+                        contentDescription = "",
+                        tint = Color(0xFFFFD700)
+                    )
+                    Icon(
+                        imageVector = Icons.Default.Star,
+                        contentDescription = "",
+                        tint = Color(0xFFFFD700)
+
+                    )
+                    Icon(
+                        imageVector = Icons.Default.Star,
+                        contentDescription = "",
+                        tint = Color.LightGray
+                    )
                 }
+
+
+
 
 
 
