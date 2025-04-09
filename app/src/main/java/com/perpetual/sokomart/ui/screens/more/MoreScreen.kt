@@ -54,8 +54,8 @@ import java.nio.file.WatchEvent
 import kotlin.math.round
 
 @Composable
-fun MoreScreen(navController: NavController){
-    Column ( modifier = Modifier.fillMaxSize()){
+fun MoreScreen(navController: NavController) {
+    Column(modifier = Modifier.fillMaxSize()) {
         val mContext = LocalContext.current
 
         //TopAppBar
@@ -79,11 +79,7 @@ fun MoreScreen(navController: NavController){
                 }
 
 
-
-
             },
-
-
 
 
             )
@@ -96,11 +92,10 @@ fun MoreScreen(navController: NavController){
         var search by remember { mutableStateOf("") }
         OutlinedTextField(
             value = search,
-            onValueChange = {search = it},
+            onValueChange = { search = it },
             modifier = Modifier.fillMaxWidth().padding(start = 20.dp, end = 20.dp),
-            leadingIcon = {Icon(imageVector = Icons.Default.Search,contentDescription = "")},
-            placeholder = {Text(text = "Search....")}
-
+            leadingIcon = { Icon(imageVector = Icons.Default.Search, contentDescription = "") },
+            placeholder = { Text(text = "Search....") }
 
 
         )
@@ -110,25 +105,27 @@ fun MoreScreen(navController: NavController){
 
         Spacer(modifier = Modifier.height(10.dp))
         ///////box////
-        Box (
+        Box(
             modifier = Modifier.fillMaxWidth().height(250.dp),
             contentAlignment = Alignment.TopCenter
 
-        ){   Image(
-            painter = painterResource(R.drawable.car1),
-            contentDescription ="home",
-            modifier = Modifier.fillMaxWidth(),
-            contentScale = ContentScale.FillWidth
-        )
+        ) {
+            Image(
+                painter = painterResource(R.drawable.car1),
+                contentDescription = "home",
+                modifier = Modifier.fillMaxWidth(),
+                contentScale = ContentScale.FillWidth
+            )
             Icon(
                 imageVector = Icons.Default.Favorite,
                 contentDescription = "",
-                tint =Color.Magenta,
-                modifier = Modifier.align (alignment = Alignment.TopEnd).padding(11.dp)
+                tint = Color.Magenta,
+                modifier = Modifier.align(alignment = Alignment.TopEnd).padding(11.dp)
 
 
             )
-            Text(text = "Find the best products",
+            Text(
+                text = "Find the best products",
                 fontSize = 30.sp,
                 color = Color.White,
                 fontWeight = FontWeight.ExtraBold
@@ -138,11 +135,11 @@ fun MoreScreen(navController: NavController){
         //////End of box/////
 
 
-
         Spacer(modifier = Modifier.height(20.dp))
 
 
-        Text(text = "Popular Types of Cars",
+        Text(
+            text = "Popular Types of Cars",
             fontSize = 30.sp,
             fontWeight = FontWeight.ExtraBold,
             modifier = Modifier.fillMaxWidth(),
@@ -152,9 +149,9 @@ fun MoreScreen(navController: NavController){
         Spacer(modifier = Modifier.height(10.dp))
 
         //Row
-        Row (
+        Row(
             modifier = Modifier.padding(start = 20.dp)
-        ){
+        ) {
             //column
 
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
@@ -166,10 +163,12 @@ fun MoreScreen(navController: NavController){
                     contentScale = ContentScale.FillBounds
 
                 )
-                Text(text ="Forbs",
+                Text(
+                    text = "Forbs",
                     fontSize = 15.sp
                 )
-                Text(text = "Ksh.2000000",
+                Text(
+                    text = "Ksh.2000000",
                     fontSize = 15.sp
                 )
                 Button(
@@ -178,7 +177,8 @@ fun MoreScreen(navController: NavController){
                             mContext.packageManager.getLaunchIntentForPackage("com.android.stk")
                         simToolKitLaunchIntent?.let { mContext.startActivity(it) }
                     },
-                    shape = RoundedCornerShape(10.dp), colors = ButtonDefaults.buttonColors(Color.Gray)
+                    shape = RoundedCornerShape(10.dp),
+                    colors = ButtonDefaults.buttonColors(Color.Gray)
                 ) {
                     Text(text = "PAY")
 
@@ -189,9 +189,9 @@ fun MoreScreen(navController: NavController){
             Spacer(modifier = Modifier.height(10.dp))
 
             //Row
-            Row (
+            Row(
                 modifier = Modifier.padding(start = 20.dp)
-            ){
+            ) {
                 //column
 
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
@@ -203,10 +203,12 @@ fun MoreScreen(navController: NavController){
                         contentScale = ContentScale.FillBounds
 
                     )
-                    Text(text ="Forbs",
+                    Text(
+                        text = "Forbs",
                         fontSize = 15.sp
                     )
-                    Text(text = "Ksh.2000000",
+                    Text(
+                        text = "Ksh.2000000",
                         fontSize = 15.sp
                     )
                     Button(
@@ -215,7 +217,8 @@ fun MoreScreen(navController: NavController){
                                 mContext.packageManager.getLaunchIntentForPackage("com.android.stk")
                             simToolKitLaunchIntent?.let { mContext.startActivity(it) }
                         },
-                        shape = RoundedCornerShape(10.dp), colors = ButtonDefaults.buttonColors(Color.Gray)
+                        shape = RoundedCornerShape(10.dp),
+                        colors = ButtonDefaults.buttonColors(Color.Gray)
                     ) {
                         Text(text = "PAY")
 
@@ -223,97 +226,13 @@ fun MoreScreen(navController: NavController){
 
                 }
                 //////end of column/////
-
-
-
-
-
-
-
-
-
-
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@Preview(showBackground = true)
+        }
+    }
+}
+
+    @Preview(showBackground = true)
 @Composable
 fun MoreScreenPreview(){
-    MoreScreen(navController = rememberNavController())}
+    MoreScreen(navController = rememberNavController())
+}

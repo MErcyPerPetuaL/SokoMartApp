@@ -64,153 +64,264 @@ fun AboutScreen(navController: NavController){
         }
         ///////end of card////
 
+        Spacer(modifier = Modifier.height(30.dp))
+
+
         /////ROW/////
-        Row (modifier = Modifier.padding(start = 20.dp)){  }
-        /// Card 1 ///
-        Card ( modifier = Modifier.width(150.dp).height(180.dp)
-        ){
-            Column(modifier = Modifier.fillMaxSize(),
-                horizontalAlignment =  Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center
-            )
-            {
-                Image(
-                    painter = painterResource(R.drawable.home),
-                    contentDescription = "Home",
-                    modifier = Modifier.size(150.dp)
+        Row (modifier = Modifier.padding(start = 20.dp)) {
+            /// Card 1 ///
+            Card(
+                modifier = Modifier.width(150.dp).height(180.dp)
+            ) {
+                Column(
+                    modifier = Modifier.fillMaxSize(),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
                 )
-                Text(
-                    text = "Shop",
-                    fontSize = 30.sp,
-                    color = Color.White,
-                    fontFamily = FontFamily.Cursive
+                {
+                    Image(
+                        painter = painterResource(R.drawable.home),
+                        contentDescription = "Home",
+                        modifier = Modifier.size(150.dp)
+                    )
+                    Text(
+                        text = "Shop",
+                        fontSize = 30.sp,
+                        color = Color.White,
+                        fontFamily = FontFamily.Cursive
 
-                )
+                    )
 
+
+                }
 
 
             }
 
 
-        }
+            ////End of 1////
 
 
+            Spacer(modifier = Modifier.width(20.dp))
 
-        ////End of 1////
-
-        /////END OF ROW/////
-
-        Spacer(modifier = Modifier.width(20.dp))
-
-        /////ROW2/////
-        Row (modifier = Modifier.padding(start = 20.dp)){  }
-        /// Card 1 ///
-        Card ( modifier = Modifier.width(150.dp).height(180.dp)
-        ){
-            Column(modifier = Modifier.fillMaxSize(),
-                horizontalAlignment =  Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center
-            )
-            {
-                Image(
-                    painter = painterResource(R.drawable.home),
-                    contentDescription = "Home",
-                    modifier = Modifier.size(150.dp)
+            /// Card 1 ///
+            Card(
+                modifier = Modifier.width(150.dp).height(180.dp)
+            ) {
+                Column(
+                    modifier = Modifier.fillMaxSize(),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
                 )
-                Text(
-                    text = "Shop",
-                    fontSize = 30.sp,
-                    color = Color.White,
-                    fontFamily = FontFamily.Cursive
+                {
+                    Image(
+                        painter = painterResource(R.drawable.home),
+                        contentDescription = "Home",
+                        modifier = Modifier.size(150.dp)
+                    )
+                    Text(
+                        text = "Shop",
+                        fontSize = 30.sp,
+                        color = Color.White,
+                        fontFamily = FontFamily.Cursive
 
-                )
+                    )
 
+
+                }
 
 
             }
 
 
+            ////End of 1////
         }
 
+            /////END OF ROW/////
+
+            Spacer(modifier = Modifier.height(20.dp))
+
+            /////ROW2/////
+            Row(modifier = Modifier.padding(start = 20.dp)) {
+            /// Card 1 ///
+            Card(
+                modifier = Modifier.width(150.dp).height(180.dp)
+            ) {
+                Column(
+                    modifier = Modifier.fillMaxSize(),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
+                )
+                {
+                    Image(
+                        painter = painterResource(R.drawable.home),
+                        contentDescription = "Home",
+                        modifier = Modifier.size(150.dp)
+                    )
+                    Text(
+                        text = "Shop",
+                        fontSize = 30.sp,
+                        color = Color.White,
+                        fontFamily = FontFamily.Cursive
+
+                    )
 
 
-        ////End of 1////
+                }
+
+
+            }
+
+
+            ////End of 1////
+
+                Spacer(modifier = Modifier.width(20.dp))
+
+
+                /// Card 1 ///
+                Card(
+                    modifier = Modifier.width(150.dp).height(180.dp)
+                ) {
+                    Column(
+                        modifier = Modifier.fillMaxSize(),
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        verticalArrangement = Arrangement.Center
+                    )
+                    {
+                        Image(
+                            painter = painterResource(R.drawable.home),
+                            contentDescription = "Home",
+                            modifier = Modifier.size(150.dp)
+                        )
+                        Text(
+                            text = "Shop",
+                            fontSize = 30.sp,
+                            color = Color.White,
+                            fontFamily = FontFamily.Cursive
+
+                        )
+
+
+                    }
+
+
+                }
+
+
+                ////End of 1////
+        }
        
     /////END OF ROW2/////
 
-        Spacer(modifier = Modifier.width(20.dp))
+        Spacer(modifier = Modifier.height(20.dp))
 
         /////ROW3/////
-        Row (modifier = Modifier.padding(start = 20.dp)){  }
-        /// Card 1 ///
-        Card ( modifier = Modifier.width(150.dp).height(180.dp)
-        ){
-            Column(modifier = Modifier.fillMaxSize(),
-                horizontalAlignment =  Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center
-            )
-            {
-                Image(
-                    painter = painterResource(R.drawable.home),
-                    contentDescription = "Home",
-                    modifier = Modifier.size(150.dp)
+        Row (modifier = Modifier.padding(start = 20.dp)) {
+            /// Card 1 ///
+            Card(
+                modifier = Modifier.width(150.dp).height(180.dp)
+            ) {
+                Column(
+                    modifier = Modifier.fillMaxSize(),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
                 )
-                Text(
-                    text = "Shop",
-                    fontSize = 30.sp,
-                    color = Color.White,
-                    fontFamily = FontFamily.Cursive
+                {
+                    Image(
+                        painter = painterResource(R.drawable.home),
+                        contentDescription = "Home",
+                        modifier = Modifier.size(150.dp)
+                    )
+                    Text(
+                        text = "Shop",
+                        fontSize = 30.sp,
+                        color = Color.White,
+                        fontFamily = FontFamily.Cursive
 
-                )
+                    )
 
+
+                }
 
 
             }
 
 
+            ////End of 1////
+
+            Spacer(modifier = Modifier.width(20.dp))
+
+
+            /// Card 1 ///
+            Card(
+                modifier = Modifier.width(150.dp).height(180.dp)
+            ) {
+                Column(
+                    modifier = Modifier.fillMaxSize(),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
+                )
+                {
+                    Image(
+                        painter = painterResource(R.drawable.home),
+                        contentDescription = "Home",
+                        modifier = Modifier.size(150.dp)
+                    )
+                    Text(
+                        text = "Shop",
+                        fontSize = 30.sp,
+                        color = Color.White,
+                        fontFamily = FontFamily.Cursive
+
+                    )
+
+
+                }
+
+
+            }
+
+
+            ////End of 1////
         }
-
-
-
-        ////End of 1////
 
         /////END OF ROW3/////
         Spacer(modifier = Modifier.width(20.dp))
 
         /////ROW4/////
-        Row (modifier = Modifier.padding(start = 20.dp)){  }
-        /// Card 1 ///
-        Card ( modifier = Modifier.width(150.dp).height(180.dp)
-        ){
-            Column(modifier = Modifier.fillMaxSize(),
-                horizontalAlignment =  Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center
-            )
-            {
-                Image(
-                    painter = painterResource(R.drawable.home),
-                    contentDescription = "Home",
-                    modifier = Modifier.size(150.dp)
+        Row (modifier = Modifier.padding(start = 20.dp)) {
+            /// Card 1 ///
+            Card(
+                modifier = Modifier.width(150.dp).height(180.dp)
+            ) {
+                Column(
+                    modifier = Modifier.fillMaxSize(),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
                 )
-                Text(
-                    text = "Shop",
-                    fontSize = 30.sp,
-                    color = Color.White,
-                    fontFamily = FontFamily.Cursive
+                {
+                    Image(
+                        painter = painterResource(R.drawable.home),
+                        contentDescription = "Home",
+                        modifier = Modifier.size(150.dp)
+                    )
+                    Text(
+                        text = "Shop",
+                        fontSize = 30.sp,
+                        color = Color.White,
+                        fontFamily = FontFamily.Cursive
 
-                )
+                    )
 
+
+                }
 
 
             }
 
 
+            ////End of 1////
         }
-
-
-
-        ////End of 1////
-
         /////END OF ROW4/////
 
 
