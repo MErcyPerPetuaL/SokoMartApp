@@ -1,6 +1,7 @@
 package com.perpetual.sokomart.ui.screens.dashboard
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -29,6 +30,11 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.perpetual.sokomart.R
 import androidx.navigation.compose.rememberNavController
+import com.perpetual.sokomart.navigation.ROUT_ABOUT
+import com.perpetual.sokomart.navigation.ROUT_CONTACT
+import com.perpetual.sokomart.navigation.ROUT_HOME
+import com.perpetual.sokomart.navigation.ROUT_MORE
+import com.perpetual.sokomart.navigation.ROUT_START
 import java.nio.file.WatchEvent
 
 @Composable
@@ -49,7 +55,7 @@ fun AboutScreen(navController: NavController){
                 verticalArrangement = Arrangement.Center
             ) {
                 Image(
-                    painter = painterResource(R.drawable.home),
+                    painter = painterResource(R.drawable.mart),
                     contentDescription = "Home",
                     modifier = Modifier.size(150.dp)
                 )
@@ -71,7 +77,10 @@ fun AboutScreen(navController: NavController){
         Row (modifier = Modifier.padding(start = 20.dp)) {
             /// Card 1 ///
             Card(
-                modifier = Modifier.width(150.dp).height(180.dp)
+                modifier = Modifier.width(150.dp).height(180.dp).clickable{navController.navigate(
+                    ROUT_HOME
+                )}
+
             ) {
                 Column(
                     modifier = Modifier.fillMaxSize(),
@@ -80,14 +89,14 @@ fun AboutScreen(navController: NavController){
                 )
                 {
                     Image(
-                        painter = painterResource(R.drawable.home),
+                        painter = painterResource(R.drawable.home2),
                         contentDescription = "Home",
                         modifier = Modifier.size(150.dp)
                     )
                     Text(
-                        text = "Shop",
+                        text = "Home",
                         fontSize = 30.sp,
-                        color = Color.White,
+                        color = Color.Black,
                         fontFamily = FontFamily.Cursive
 
                     )
@@ -106,7 +115,10 @@ fun AboutScreen(navController: NavController){
 
             /// Card 1 ///
             Card(
-                modifier = Modifier.width(150.dp).height(180.dp)
+                modifier = Modifier.width(150.dp).height(180.dp).clickable{navController.navigate(
+                    ROUT_ABOUT
+                )}
+
             ) {
                 Column(
                     modifier = Modifier.fillMaxSize(),
@@ -115,14 +127,14 @@ fun AboutScreen(navController: NavController){
                 )
                 {
                     Image(
-                        painter = painterResource(R.drawable.home),
+                        painter = painterResource(R.drawable.icon1),
                         contentDescription = "Home",
                         modifier = Modifier.size(150.dp)
                     )
                     Text(
-                        text = "Shop",
+                        text = "About",
                         fontSize = 30.sp,
-                        color = Color.White,
+                        color = Color.Black,
                         fontFamily = FontFamily.Cursive
 
                     )
@@ -145,7 +157,10 @@ fun AboutScreen(navController: NavController){
             Row(modifier = Modifier.padding(start = 20.dp)) {
             /// Card 1 ///
             Card(
-                modifier = Modifier.width(150.dp).height(180.dp)
+                modifier = Modifier.width(150.dp).height(180.dp).clickable{navController.navigate(
+                    ROUT_CONTACT
+                )}
+
             ) {
                 Column(
                     modifier = Modifier.fillMaxSize(),
@@ -154,14 +169,14 @@ fun AboutScreen(navController: NavController){
                 )
                 {
                     Image(
-                        painter = painterResource(R.drawable.home),
+                        painter = painterResource(R.drawable.contct),
                         contentDescription = "Home",
                         modifier = Modifier.size(150.dp)
                     )
                     Text(
-                        text = "Shop",
+                        text = "Contact",
                         fontSize = 30.sp,
-                        color = Color.White,
+                        color = Color.Black,
                         fontFamily = FontFamily.Cursive
 
                     )
@@ -180,7 +195,9 @@ fun AboutScreen(navController: NavController){
 
                 /// Card 1 ///
                 Card(
-                    modifier = Modifier.width(150.dp).height(180.dp)
+                    modifier = Modifier.width(150.dp).height(180.dp).clickable{navController.navigate(
+                        ROUT_START
+                    )}
                 ) {
                     Column(
                         modifier = Modifier.fillMaxSize(),
@@ -189,14 +206,14 @@ fun AboutScreen(navController: NavController){
                     )
                     {
                         Image(
-                            painter = painterResource(R.drawable.home),
+                            painter = painterResource(R.drawable.start),
                             contentDescription = "Home",
                             modifier = Modifier.size(150.dp)
                         )
                         Text(
-                            text = "Shop",
+                            text = "Start",
                             fontSize = 30.sp,
-                            color = Color.White,
+                            color = Color.Black,
                             fontFamily = FontFamily.Cursive
 
                         )
@@ -219,7 +236,9 @@ fun AboutScreen(navController: NavController){
         Row (modifier = Modifier.padding(start = 20.dp)) {
             /// Card 1 ///
             Card(
-                modifier = Modifier.width(150.dp).height(180.dp)
+                modifier = Modifier.width(150.dp).height(180.dp).clickable{navController.navigate(
+                    ROUT_MORE
+                )}
             ) {
                 Column(
                     modifier = Modifier.fillMaxSize(),
@@ -228,14 +247,14 @@ fun AboutScreen(navController: NavController){
                 )
                 {
                     Image(
-                        painter = painterResource(R.drawable.home),
+                        painter = painterResource(R.drawable.shop),
                         contentDescription = "Home",
                         modifier = Modifier.size(150.dp)
                     )
                     Text(
-                        text = "Shop",
+                        text = "More",
                         fontSize = 30.sp,
-                        color = Color.White,
+                        color = Color.Black,
                         fontFamily = FontFamily.Cursive
 
                     )
@@ -263,14 +282,14 @@ fun AboutScreen(navController: NavController){
                 )
                 {
                     Image(
-                        painter = painterResource(R.drawable.home),
+                        painter = painterResource(R.drawable.home2),
                         contentDescription = "Home",
                         modifier = Modifier.size(150.dp)
                     )
                     Text(
-                        text = "Shop",
+                        text = "Home",
                         fontSize = 30.sp,
-                        color = Color.White,
+                        color = Color.Black,
                         fontFamily = FontFamily.Cursive
 
                     )
@@ -301,14 +320,14 @@ fun AboutScreen(navController: NavController){
                 )
                 {
                     Image(
-                        painter = painterResource(R.drawable.home),
+                        painter = painterResource(R.drawable.icon1),
                         contentDescription = "Home",
                         modifier = Modifier.size(150.dp)
                     )
                     Text(
-                        text = "Shop",
+                        text = "About",
                         fontSize = 30.sp,
-                        color = Color.White,
+                        color = Color.Black,
                         fontFamily = FontFamily.Cursive
 
                     )

@@ -1,9 +1,5 @@
-package com.perpetual.sokomart.ui.screens.contact
+package com.perpetual.sokomart.ui.screens.service
 
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.NavController
-import androidx.navigation.compose.rememberNavController
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -25,21 +21,23 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.perpetual.sokomart.navigation.ROUT_HOME
-
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ContactScreen(navController: NavController){
-
+fun ServiceScreen(navController: NavController){
 
     //Scaffold
 
@@ -122,9 +120,7 @@ fun ContactScreen(navController: NavController){
 
 
                 //Main Contents of the page
-                Text(text = "Welcome to Homescreen Screen", fontSize = 20.sp)
-                Spacer(modifier = Modifier.height(8.dp))
-                Text("This is where the main content goes.")
+
 
 
 
@@ -144,10 +140,25 @@ fun ContactScreen(navController: NavController){
     //End of scaffold///
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @Preview(showBackground = true)
 @Composable
-fun ContactScreenPreview(){
-    ContactScreen(navController = rememberNavController())
+fun ServiceScreenPreview(){
+    ServiceScreen(navController = rememberNavController())
 }

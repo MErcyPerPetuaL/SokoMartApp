@@ -6,7 +6,15 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.perpetual.sokomart.ui.screens.about.AboutScreen
+import com.perpetual.sokomart.ui.screens.contact.ContactScreen
+import com.perpetual.sokomart.ui.screens.form.FormScreen
 import com.perpetual.sokomart.ui.screens.home.HomeScreen
+import com.perpetual.sokomart.ui.screens.intent.IntentScreen
+import com.perpetual.sokomart.ui.screens.item.ItemScreen
+import com.perpetual.sokomart.ui.screens.more.MoreScreen
+import com.perpetual.sokomart.ui.screens.service.ServiceScreen
+import com.perpetual.sokomart.ui.screens.splash.SplashScreen
+import com.perpetual.sokomart.ui.screens.start.StartScreen
 
 @Composable
 fun AppNavHost(
@@ -27,21 +35,38 @@ fun AppNavHost(
             AboutScreen(navController)
         }
         composable(ROUT_MORE) {
-            AboutScreen(navController)
+            MoreScreen(navController)
         }
         composable(ROUT_INTENT) {
-            AboutScreen(navController)
+            IntentScreen(navController)
         }
         composable(ROUT_START) {
-            AboutScreen(navController)
+            StartScreen(navController)
         }
         composable(ROUT_ITEM) {
-            AboutScreen(navController)
+            ItemScreen(navController)
         }
 
         composable(ROUT_DASHBOARD) {
-            AboutScreen(navController)
+            DashboardScreen(navController)
+        }
+        composable(ROUT_CONTACT) {
+            ContactScreen(navController)
+        }
+        composable(ROUT_SERVICE) {
+            ServiceScreen(navController)
+        }
+        composable(ROUT_SPLASH) {
+            SplashScreen(navController)
+        }
+        composable(ROUT_FORM) {
+            FormScreen(navController)
         }
 
     }
+}
+
+@Composable
+fun DashboardScreen(x0: NavHostController) {
+    TODO("Not yet implemented")
 }
