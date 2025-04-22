@@ -12,4 +12,4 @@ val Pink40 = Color(0xFF7D5260)
 
 val Newred = Color(0xFFFF3A3A)
 val Newblack = Color(0xFF1C1C1C)
-val mytheme = Color(0xFFB00020) // Use your preferred color
+val mytheme = Color(0xFFB00020)

@@ -20,6 +20,7 @@ import com.perpetual.sokomart.R
 import com.perpetual.sokomart.ui.theme.Newblack
 import com.perpetual.sokomart.ui.theme.Newred
 import com.perpetual.sokomart.navigation.ROUT_DASHBOARD
+import com.perpetual.sokomart.navigation.ROUT_LOGIN
 import kotlinx.coroutines.delay
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
@@ -27,7 +28,7 @@ import kotlinx.coroutines.delay
 fun SplashScreen(navController: NavController) {
     LaunchedEffect(Unit) {
         delay(2500)
-        navController.navigate(ROUT_DASHBOARD)
+        navController.navigate(ROUT_LOGIN)
     }
 
     Column(
